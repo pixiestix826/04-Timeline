@@ -1,0 +1,7 @@
+.timeline {
+  list-style: none;
+  margin-left: 200px;
+  border-left: #575bb4 solid 4px;
+  border-image:
+      linear-gradient(to bottom, #575bb4, #8e92f5) 1 100%;
+}
