@@ -13,17 +13,48 @@ body {
 }
 
 .date {
-  display: inline-block;
   position: absolute;
   right: 100%;
   font-size: 10px;
+  color: black;
   margin-right: 10px;
 }
 
 .time {
-  display: inline-block;
   position: absolute;
   right: 100%;
   font-size: 30px;
+  color: black;
   margin: 30px 10px 0 0;
+}
+
+.recipe1 {
+  background: blue;
+  color: white;
+}
+
+.recipe2 {
+  background: orange;
+  color: white;
+}
+
+.timeline i {
+  position: absolute;
+  right: 96%;
+  color: black;
+  background: lightblue;
+  height: 30px;
+  width: 30px;
+  border: 4px slateblue solid;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.fa-mobile {
+  font-size: 27.4px;
+  bottom: 97.5%;
+  text-align: center;
+}
+.fa-desktop {
+  text-align: center;
 }
