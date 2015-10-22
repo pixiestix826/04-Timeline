@@ -1,5 +1,6 @@
 body {
   font-family: sans-serif;
+  font-size: 16px;
 }
 
 .timeline {
@@ -16,8 +17,8 @@ body {
   position: absolute;
   right: 100%;
   font-size: 10px;
-  color: black;
-  margin-right: 10px;
+  color: #c8c3c3;
+  margin-right: 15px;
 }
 
 .time {
@@ -25,36 +26,66 @@ body {
   right: 100%;
   font-size: 30px;
   color: black;
-  margin: 30px 10px 0 0;
+  margin: 20px 20px 0 0;
 }
 
 .recipe1 {
-  background: blue;
+  background: #8dcade;
   color: white;
+  width: 500px;
+  padding: 20px;
+  border-radius: .5em;
+  margin-bottom: 15px;
+
 }
 
 .recipe2 {
-  background: orange;
+  background: #2786a8;
   color: white;
+  width: 500px;
+  padding: 20px;
+  border-radius: .5em;
 }
 
 .timeline i {
   position: absolute;
   right: 96%;
   color: black;
-  background: lightblue;
-  height: 30px;
-  width: 30px;
-  border: 4px slateblue solid;
+  background: #2786a8;
+  height: 32px;
+  width: 32px;
+  border: 6px #8dcade solid;
   border-radius: 100%;
   text-align: center;
+  color: white;
 }
 
 .fa-mobile {
   font-size: 27.4px;
-  bottom: 97.5%;
+  bottom: 95.5%;
   text-align: center;
 }
 .fa-desktop {
-  text-align: center;
+  font-size: 18px;
+  border-radius: 100%;
+  bottom: 35%;
+  line-height: 18px;
+}
+
+h1, .body {
+  margin: 10px;
+}
+h1 {
+  font-size: 1.3rem;
+}
+.body {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.recipe1 .time {
+  color: #8dcade;
+}
+.recipe2 .time {
+  color: #2786a8;
 }
