@@ -14,7 +14,7 @@ body {
 }
 
 .article {
-  background: #2d6d8c;
+  background: red;
   color: white;
   width: 500px;
   padding: 20px;
@@ -24,23 +24,25 @@ body {
 }
 
 .article:nth-of-type(2n) {
-  background: #4bb2e4;
+  background: blue;
   color: white;
   width: 500px;
   padding: 20px;
   border-radius: .5em;
 }
 
-.date {
+.section .date {
   position: absolute;
+  float: left;
   right: 100%;
   font-size: 10px;
   color: #c8c3c3;
   margin-right: 15px;
 }
 
-.time {
+.section .time {
   position: absolute;
+  float: left;
   right: 100%;
   font-size: 30px;
   color: black;
@@ -49,32 +51,25 @@ body {
 
 .article i {
   position: absolute;
+  line-height: 34px;
   right: 96%;
-  color: black;
-  background: #2786a8;
-  height: 32px;
-  width: 32px;
-  border: 6px #8dcade solid;
+  height: 34px;
+  width: 34px;
+  border: 6px pink solid;
   border-radius: 100%;
   text-align: center;
+  background: orange;
   color: white;
 }
 
 .fa-mobile {
   font-size: 27.4px;
-  bottom: 95.5%;
-  text-align: center;
-}
-.fa-desktop {
-  font-size: 18px;
-  border-radius: 100%;
-  bottom: 35%;
-  line-height: 18px;
 }
 
-h1, .body {
-  margin: 10px;
+.fa-desktop {
+  font-size: 18px;
 }
+
 h1 {
   font-size: 1.3rem;
   border-bottom: 1px rgb(234, 238, 245) solid;
@@ -85,19 +80,21 @@ h1 {
   font-weight: lighter;
 }
 
-.section .time {
-  color: #8dcade;
-}
-.section .time {
-  color: #2786a8;
-}
-
 .triangle::after {
   content: "";
   position: absolute;
   top: ;
-
+  left: ;
   border-style: solid;
-  border-width: 2.5px 4.3px 2.5px 0;
-  border-color: transparent #8dcade transparent transparent;
+  border-width: 7.5px 13.0px 7.5px 0;
+  border-color: transparent orange transparent transparent;
+}
+.triangle::after:nth-of-type(2n) {
+  content: "";
+  position: absolute;
+  top: calc(100% - 30px);
+  left: 100px;
+  border-style: solid;
+  border-width: 7.5px 13.0px 7.5px 0;
+  border-color: transparent orange transparent transparent;
 }
