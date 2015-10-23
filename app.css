@@ -13,6 +13,24 @@ body {
   position: absolute;
 }
 
+.article {
+  background: #2d6d8c;
+  color: white;
+  width: 500px;
+  padding: 20px;
+  border-radius: .5em;
+  margin-bottom: 15px;
+
+}
+
+.article:nth-of-type(2n) {
+  background: #4bb2e4;
+  color: white;
+  width: 500px;
+  padding: 20px;
+  border-radius: .5em;
+}
+
 .date {
   position: absolute;
   right: 100%;
@@ -29,25 +47,7 @@ body {
   margin: 20px 20px 0 0;
 }
 
-.recipe-tall {
-  background: #8dcade;
-  color: white;
-  width: 500px;
-  padding: 20px;
-  border-radius: .5em;
-  margin-bottom: 15px;
-
-}
-
-.recipe-short {
-  background: #2786a8;
-  color: white;
-  width: 500px;
-  padding: 20px;
-  border-radius: .5em;
-}
-
-.timeline i {
+.article i {
   position: absolute;
   right: 96%;
   color: black;
@@ -77,15 +77,27 @@ h1, .body {
 }
 h1 {
   font-size: 1.3rem;
+  border-bottom: 1px rgb(234, 238, 245) solid;
+  padding-bottom: 5px;
 }
 .body {
   font-size: 14px;
   font-weight: lighter;
 }
 
-.recipe-tall .time {
+.section .time {
   color: #8dcade;
 }
-.recipe-short .time {
+.section .time {
   color: #2786a8;
+}
+
+.triangle::after {
+  content: "";
+  position: absolute;
+  top: ;
+
+  border-style: solid;
+  border-width: 2.5px 4.3px 2.5px 0;
+  border-color: transparent #8dcade transparent transparent;
 }
