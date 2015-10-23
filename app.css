@@ -29,7 +29,7 @@ body {
   margin: 20px 20px 0 0;
 }
 
-.recipe1 {
+.recipe-tall {
   background: #8dcade;
   color: white;
   width: 500px;
@@ -39,7 +39,7 @@ body {
 
 }
 
-.recipe2 {
+.recipe-short {
   background: #2786a8;
   color: white;
   width: 500px;
@@ -83,9 +83,9 @@ h1 {
   font-weight: lighter;
 }
 
-.recipe1 .time {
+.recipe-tall .time {
   color: #8dcade;
 }
-.recipe2 .time {
+.recipe-short .time {
   color: #2786a8;
 }
