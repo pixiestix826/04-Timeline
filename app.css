@@ -7,9 +7,9 @@ body {
   list-style: none;
   margin-left: 200px;
   border: 0;
-  border-left: #575bb4 solid 4px;
+  border-left: #92cbe0 solid 4px;
   border-image:
-      linear-gradient(to bottom, #575bb4, #8e92f5) 1 100%;
+      linear-gradient(to bottom, #92cbe0, #8e92f5) 1 100%;
   position: absolute;
 }
 /* Timeline Article Styling */
@@ -24,10 +24,6 @@ body {
 
 .article:nth-of-type(2n) {
   background: blue;
-  color: white;
-  width: 500px;
-  padding: 20px;
-  border-radius: .5em;
 }
 
 /* Article Font Styling */
@@ -42,30 +38,38 @@ h1 {
 }
 
 /* Timeline Indicator Items */
-.section .date {
+
+.section  {
   position: absolute;
   float: left;
-  right: 100%;
+  right: 105%;
+}
+
+.section .date {
   font-size: 10px;
+  line-height: 10px;
   color: #c8c3c3;
-  margin-right: 15px;
+  margin-bottom: 0;
+  margin-top: -22px;
+  padding-left: 40px;
 }
 
 .section .time {
-  position: absolute;
-  float: left;
-  right: 100%;
   font-size: 30px;
-  color: black;
-  margin: 20px 20px 0 0;
+  line-height: 30px;
+  color: #92cbe0;
+  margin-top: 0;
 }
 
-.article i {
+ .section i {
   position: absolute;
-  right: 96%;
+  left: 105%;
+  float: left;
+  display: inline-block;
+  vertical-align: center;
   height: 34px;
   width: 34px;
-  border: 6px pink solid;
+  border: 6px #92cbe0 solid;
   border-radius: 100%;
   text-align: center;
   line-height: 34px;
@@ -73,13 +77,19 @@ h1 {
   color: white;
 }
 
-
 .fa-mobile {
   font-size: 27.4px;
+  bottom: 70%;
 }
 
 .fa-desktop {
   font-size: 18px;
+  bottom: 63%;
+}
+
+.fa-star-o {
+  font-size: 26px;
+  bottom: 70%;
 }
 
 /* Triangle Styling */
@@ -92,14 +102,12 @@ h1 {
   content: "";
   position: absolute;
   right: 104%;
-  bottom: 100%;
+  bottom: 108%;
   border-style: solid;
   border-width: 7.5px 13.0px 7.5px 0;
-  border-color: transparent orange transparent transparent;
+  border-color: transparent #92cbe0 transparent transparent;
 }
 
 .triangle::before:nth-of-type(2n) {
-  border-style: solid;
-  border-width: 7.5px 13.0px 7.5px 0;
   border-color: transparent orange transparent transparent;
 }
