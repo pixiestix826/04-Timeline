@@ -4,13 +4,13 @@ body {
 }
 
 .timeline {
+  position: relative;
   list-style: none;
   margin-left: 200px;
   border: 0;
   border-left: #92cbe0 solid 4px;
   border-image:
       linear-gradient(to bottom, #92cbe0, #287f9f) 1 100%;
-  position: absolute;
 }
 /* Timeline Article Styling */
 .article {
