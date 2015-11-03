@@ -43,9 +43,10 @@ h1 {
   position: absolute;
   float: left;
   right: 110%;
+
 }
 
-.section .date {
+ .date {
   font-size: 10px;
   line-height: 10px;
   color: #c8c3c3;
@@ -54,11 +55,11 @@ h1 {
   padding-left: 40px;
 }
 
- .section .time {
+ .time {
   font-size: 30px;
   line-height: 30px;
-  color: #92cbe0;
   margin-top: 0;
+  color: #92cbe0;
 }
 
  .time:nth-of-type(2n) {
@@ -67,7 +68,7 @@ h1 {
 
  .section i {
   position: absolute;
-  left: 132%;
+  transform: translate(365%, 20%);
   float: left;
   height: 34px;
   width: 34px;
@@ -99,17 +100,12 @@ h1 {
   overflow: visible;
 }
 
-.triangle::after {
+.triangle::before {
   content: "";
-  right: 103%;
-  bottom: 106%;
+  left: 100%;
+  width: 0;
+  height: 0;
   border-style: solid;
-  border-width: 7.5px 13.0px 7.5px 0;
-  border-color: transparent #92cbe0 transparent transparent;
-}
-
- .triangle:nth-of-type(2n) {
-  border-style: solid;
-  border-width: 7.5px 13.0px 7.5px 0;
+  border-width: 4px 6.9px 4px 0;
   border-color: transparent #287f9f transparent transparent;
 }
