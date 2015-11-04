@@ -59,7 +59,7 @@ h1 {
   color: #92cbe0;
 }
 
- .time:nth-of-type(2n) {
+ li:nth-of-type(2n) .time {
   color: #287f9f;
 }
 
@@ -89,13 +89,10 @@ h1 {
 }
 
 /* Triangle Styling */
-.triangle {
-  position: absolute;
-}
 
 .triangle::before {
   content: "";
-  float: left;
+  position: absolute;
   transform: translate(-300%, -450%);
   width: 0;
   height: 0;
@@ -104,6 +101,6 @@ h1 {
   border-color: transparent #92cbe0 transparent transparent;
 }
 
-.triangle:nth-of-type(2n) {
+.article:nth-of-type(2n) .triangle::before {
   border-color: transparent #287f9f transparent transparent;
 }
